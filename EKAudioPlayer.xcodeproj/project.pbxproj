@@ -10,6 +10,8 @@
 		07B7CC961C7678D9006DFE55 /* EKAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B7CC951C7678D9006DFE55 /* EKAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07B7CC9D1C7678DA006DFE55 /* EKAudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B7CC921C7678D9006DFE55 /* EKAudioPlayer.framework */; };
 		07B7CCA21C7678DA006DFE55 /* EKAudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7CCA11C7678DA006DFE55 /* EKAudioPlayerTests.swift */; };
+		07B7CCAD1C7678F7006DFE55 /* EKAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7CCAC1C7678F7006DFE55 /* EKAudioPlayer.swift */; };
+		07B7CCAF1C767A60006DFE55 /* EKPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7CCAE1C767A60006DFE55 /* EKPlaylist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		07B7CC9C1C7678DA006DFE55 /* EKAudioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKAudioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B7CCA11C7678DA006DFE55 /* EKAudioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKAudioPlayerTests.swift; sourceTree = "<group>"; };
 		07B7CCA31C7678DA006DFE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B7CCAC1C7678F7006DFE55 /* EKAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKAudioPlayer.swift; sourceTree = "<group>"; };
+		07B7CCAE1C767A60006DFE55 /* EKPlaylist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKPlaylist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				07B7CC951C7678D9006DFE55 /* EKAudioPlayer.h */,
+				07B7CCAC1C7678F7006DFE55 /* EKAudioPlayer.swift */,
+				07B7CCAE1C767A60006DFE55 /* EKPlaylist.swift */,
 				07B7CC971C7678DA006DFE55 /* Info.plist */,
 			);
 			path = EKAudioPlayer;
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B7CCAD1C7678F7006DFE55 /* EKAudioPlayer.swift in Sources */,
+				07B7CCAF1C767A60006DFE55 /* EKPlaylist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 		07B7CCA71C7678DA006DFE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.erickoehler.EKAudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07B7CCA81C7678DA006DFE55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +387,7 @@
 				07B7CCA81C7678DA006DFE55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07B7CCA91C7678DA006DFE55 /* Build configuration list for PBXNativeTarget "EKAudioPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +396,7 @@
 				07B7CCAB1C7678DA006DFE55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
