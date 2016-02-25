@@ -1,12 +1,11 @@
 //
 //  EKAudioPlayer.swift
-//  Nervana
+//  EKAudioPlayer
 //
-//  Created by Eric Koehler  on 10/21/15.
+//  Created by Eric Koehler  on 2/25/16.
 //  Copyright © 2015 Eric Koehler. All rights reserved.
 //
 
-import UIKit
 import MediaPlayer
 import AVFoundation
 
