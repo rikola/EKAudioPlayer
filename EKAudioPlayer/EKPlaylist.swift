@@ -56,13 +56,13 @@ class EKPlaylist<T> {
 		if index == endIndex || index + 1 == endIndex {
 			return nil
 		}
-		index++
+		index += 1
 		return contents[index]
 	}
 	
 	func previous() -> T? {
 		if index > startIndex {
-			index--
+			index -= 1
 		}
 		return contents[index]
 	}

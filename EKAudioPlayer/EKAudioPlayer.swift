@@ -110,7 +110,7 @@ public class EKAudioPlayer: NSObject {
 		// Find average channel power		
 		var averagePower: Float = 0.0
 		let channelCount = thePlayer.numberOfChannels
-		for(var i = 0; i < channelCount; i++) {
+		for i in 0 ..< channelCount {
 			averagePower += thePlayer.averagePowerForChannel(i)
 		}
 		averagePower = averagePower / Float(channelCount)
